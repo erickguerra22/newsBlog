@@ -1,0 +1,81 @@
+.newPage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notFound-img {
+    width: 80%;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.notFound-msg {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.newDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.newPage-banner {
+    width: 98%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.newPage-banner h1 {
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+    padding: 50px 200px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.newPage-content {
+    width: 90%;
+    text-align: start;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.329);
+    padding: 5px;
+    border-radius: 5px;
+    color: black
+}
+
+.back:hover{
+    background: white;
+    padding-left: 10px;
+    transition:all ease 100ms;
+}
+
+.newPage-date{
+    margin-top: 5px;
+    margin-bottom: 0;
+}

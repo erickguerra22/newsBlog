@@ -1,0 +1,38 @@
+.mainPage-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPage-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.mainPage-newsGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.card-sample{
+    background-color: red;
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 940px) {
+    .mainPage-newsGrid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }   
+}

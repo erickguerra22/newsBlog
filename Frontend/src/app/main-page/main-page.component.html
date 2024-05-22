@@ -1,0 +1,10 @@
+<div class="mainPage-container">
+    <h1 class="mainPage-title">Página de noticias</h1>
+    <!-- Pendiente barra de búsqueda por categoría -->
+    <div class="mainPage-newsGrid">
+        <div *ngFor="let new of news">
+            <app-new-card (click)="goToDetail(new.id)" [title]="new.title" [content]="new.content" [banner]="new.banner" [publishDate]="new.publishDate">
+            </app-new-card>
+        </div>
+    </div>
+</div>

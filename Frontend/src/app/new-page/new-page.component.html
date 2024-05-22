@@ -1,0 +1,19 @@
+<div class="newPage-container">
+    <a class="back" [routerLink]="['/']">
+        <mat-icon>arrow_back</mat-icon>
+    </a>
+    <div *ngIf="new" class="newDetail">
+        <div class="newPage-banner" [ngStyle]="{'background-image': 'url(' + banner + ')'}">
+            <h1>{{new.title}}</h1>
+        </div>
+        <p class="newPage-date">Publicado el <strong>{{ formatDate(new.publishDate) }}</strong></p>
+        <p class="newPage-content">{{new.content}}</p>
+    </div>
+    <div *ngIf="!new" class="notFound">
+        <img class="notFound-img" src="https://i.ibb.co/r4yzRwC/404.png" alt="not found image" />
+        <p class="notFound-msg">La noticia con el id {{id}} no existe.</p>
+        <a [routerLink]="['/']">
+            Regresar
+        </a>
+    </div>
+</div>

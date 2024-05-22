@@ -1,0 +1,10 @@
+<div class="newCard-container">
+    <div class="newCard-subContainer">
+        <img [src]="banner" [alt]="title" class="newCard-banner" />
+        <div class="newCard-content">
+            <p class="newCard-title">{{title}}</p>
+            <p class="newCard-description">{{content.substring(0,100)}}{{content.length > 100 ? '...' : ''}}</p>
+        </div>
+    </div>
+    <p class="newCard-date">Publicado el <strong>{{ formatDate(publishDate) }}</strong></p>
+</div>
